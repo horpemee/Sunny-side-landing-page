@@ -1,6 +1,7 @@
 .section,
 .section2,
 .section3 {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -10,6 +11,13 @@
     margin: auto;
     color: var(--Very-dark-desaturated-blue);
     width: 50%;
+
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      // background-color: red;
+    }
 
     .col1 {
       margin-left: 100px;
@@ -48,6 +56,13 @@
   }
   .colOne-img {
     width: 50%;
+
+    @media (max-width: 420px) {
+      // display: flex;
+      flex-direction: column;
+      width: 100%;
+      // background-color: red;
+    }
   }
   .grape {
     width: 100%;
@@ -108,9 +123,27 @@
     height: 100%;
   }
 
-  @media screen and (max-width: 420px) {
-    .colOne {
-      width: 100%;
-    }
-  }
+  //     .col1 {
+  //       background-color: red;
+  //     }
+  //     .colOne {
+  //       flex-direction: column;
+  //     }
+
+  //     h1 {
+  //       font-size: 0.5rem;
+  //     }
+  //     .colOne-img {
+  //       flex-direction: column;
+  //     }
+  //   }
+  //   // .colOne {
+  //   //   width: 100%;
+  //   //   display: block;
+  //   // }
+  //   // .colOne-img img {
+  //   //   width: 100%;
+  //   //   display: block;
+  //   // }
+  // }
 }
