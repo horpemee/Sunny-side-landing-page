@@ -6,11 +6,16 @@
   flex-direction: row;
   overflow: hidden;
 
+  @media (max-width: 420px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .colOne {
     background-color: white;
     margin: auto;
     color: var(--Very-dark-desaturated-blue);
-    width: 50%;
+    width: 50vw;
 
     @media (max-width: 420px) {
       display: flex;
@@ -29,6 +34,10 @@
         font-size: 3rem;
         font-weight: bolder;
         // margin-bottom: 30px;
+
+        @media (max-width: 420px) {
+          font-size: 2rem;
+        }
       }
       p {
         // letter-spacing: 1px;
@@ -55,12 +64,13 @@
     }
   }
   .colOne-img {
-    width: 50%;
+    width: 50vw;
 
     @media (max-width: 420px) {
       // display: flex;
+      background-color: rebeccapurple;
       flex-direction: column;
-      width: 100%;
+      width: 100vw;
       // background-color: red;
     }
   }
