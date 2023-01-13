@@ -1,4 +1,5 @@
 import React from "react";
+import "./home.scss";
 import Navbar from "../../component/navbar/Navbar";
 import Section from "../../component/section/Section";
 import Testimonials from "../../component/testimonials/Testimonials";
