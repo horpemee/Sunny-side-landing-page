@@ -62,6 +62,9 @@
   }
 
   .gallery {
+    // background-color: red;
+    // width: 100vw;
+    // height: 800px;
     display: flex;
     flex-direction: row;
 
@@ -72,5 +75,28 @@
       object-fit: cover;
       overflow: hidden;
     }
+
+    // .bottle {
+    //   // background-color: red;
+    //   object-fit: cover;
+    //   width: 100vw;
+    //   background-image: url("../testimonials/logos/image-gallery-milkbottles.jpg");
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+
+    //   @media (max-width: 420px) {
+    //     background-image: url("../testimonials/mobile-images/image-gallery-milkbottles.jpg");
+    //   }
+    // }
+    // .orange {
+    //   background-image: url("../testimonials/mobile-images/image-gallery-orange.jpg");
+    // }
+    // .cone {
+    //   background-image: url("../testimonials/mobile-images/image-gallery-cone.jpg");
+    // }
+    // .sugar {
+    //   background-image: url("../testimonials/mobile-images/image-gallery-sugar-cubes.jpg");
+    // }
   }
 }

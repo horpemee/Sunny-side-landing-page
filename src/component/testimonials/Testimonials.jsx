@@ -52,7 +52,12 @@ const Testimonials = () => {
 
       {/* Gallery display */}
       <div className="gallery">
-        <img src={bottle} alt="bottle" />
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <img src={bottle} alt="bottle" className="bottle" />
         <img src={orange} alt="orange" />
         <img src={cone} alt="cone" />
         <img src={sugar} alt="sugar" />
