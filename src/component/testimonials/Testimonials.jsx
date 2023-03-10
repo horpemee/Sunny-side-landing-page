@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import emily from "../testimonials/logos/image-emily.jpg";
 import Thomas from "../testimonials/logos/image-thomas.jpg";
 import Jenny from "../testimonials/logos/image-jennie.jpg";
@@ -10,6 +10,20 @@ import sugar from "../testimonials/logos/image-gallery-sugarcubes.jpg";
 import "./testimonials.scss";
 
 const Testimonials = () => {
+  const mobileImg = [
+    "image-gallery-orange.jpg",
+    "image-gallery-cone.jpg",
+    "image-gallery-milkbottles.jpg",
+    "image-gallery-sugarcubes.jpg",
+  ];
+
+  const desktopImg = [
+    "image-gallery-orange.jpg",
+    "image-gallery-cone.jpg",
+    "image-gallery-milkbottles.jpg",
+    "image-gallery-sugarcubes.jpg",
+  ];
+
   return (
     <div className="main-body">
       <div className="testimony-wrapper">
@@ -56,11 +70,12 @@ const Testimonials = () => {
         <div></div>
         <div></div>
         <div></div>
-
-        <img src={bottle} alt="bottle" className="bottle" />
-        <img src={orange} alt="orange" />
-        <img src={cone} alt="cone" />
-        <img src={sugar} alt="sugar" />
+        <>
+          <img src={bottle} alt="bottle" />
+          <img src={orange} alt="orange" />
+          <img src={cone} alt="cone" />
+          <img src={sugar} alt="sugar" />
+        </>
       </div>
     </div>
   );
