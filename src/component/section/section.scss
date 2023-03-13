@@ -56,9 +56,10 @@
           margin: 30px 0;
         }
       }
-      a {
-        border-radius: 10px;
-        font-size: 18px;
+      .learn,
+      .stand {
+        font-weight: bolder;
+        font-size: 1.5rem;
         text-decoration: none;
         text-transform: uppercase;
         color: var(--Very-dark-desaturated-blue);

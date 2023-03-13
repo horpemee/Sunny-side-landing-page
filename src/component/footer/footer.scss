@@ -29,19 +29,11 @@
     }
   }
 
-  .social-logos {
+  .icon-container {
     cursor: pointer;
 
-    .social-logos:hover {
-      fill: var(--White);
+    .icon :hover {
+      fill: white;
     }
-  }
-  .icon {
-    color: "#2C7566";
-  }
-  .icon:hover {
-    fill: white;
-    // color: red;
-    // background-color: white;
   }
 }

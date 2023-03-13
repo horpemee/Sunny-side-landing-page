@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import emily from "../testimonials/logos/image-emily.jpg";
 import Thomas from "../testimonials/logos/image-thomas.jpg";
 import Jenny from "../testimonials/logos/image-jennie.jpg";
