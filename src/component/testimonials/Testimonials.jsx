@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emily from "../testimonials/logos/image-emily.jpg";
 import Thomas from "../testimonials/logos/image-thomas.jpg";
 import Jenny from "../testimonials/logos/image-jennie.jpg";
@@ -15,6 +15,21 @@ import "./testimonials.scss";
 
 const Testimonials = (props) => {
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth <= 520 && window.innerWidth >= 310) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="main-body">
       <div className="testimony-wrapper">
