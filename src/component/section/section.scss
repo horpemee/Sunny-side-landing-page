@@ -127,6 +127,9 @@
       h1 {
         margin-top: 250px;
         color: var(--Dark-desaturated-cyan);
+        @media (min-width: 310px) and (max-width: 520px) {
+          margin-top: 300px;
+        }
       }
 
       p {
@@ -177,6 +180,10 @@
       h1 {
         margin-top: 200px;
         color: var(--Dark-blue);
+
+        @media (min-width: 310px) and (max-width: 520px) {
+          margin-top: 300px;
+        }
       }
       p {
         margin-top: 3rem;
