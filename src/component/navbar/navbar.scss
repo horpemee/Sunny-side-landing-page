@@ -133,24 +133,19 @@
 
   .heroContent {
     text-align: center;
-    // background-color: red;
 
     h1 {
       color: var(--White);
       letter-spacing: 0.8rem;
       font-size: 40px;
-      // padding: 2rem 0;
       margin: 4rem 0;
       font-weight: 900;
 
-      // background-color: blue;
       text-transform: uppercase;
     }
     img {
       position: absolute;
-      left: 100;
-      bottom: 100;
-      // top: 40px;
+      top: 45%;
     }
   }
 }

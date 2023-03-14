@@ -46,7 +46,7 @@ const Navbar = () => {
 
         <div className="heroContent">
           <h1>We are creatives</h1>
-          <img src={arrow} alt="arrow" />
+          <img src={arrow} alt="arrow" className="arrow" />
         </div>
       </div>
     </div>
