@@ -3,30 +3,31 @@ import "./navbar.scss";
 import logo from "..//images/logo.svg";
 import hamburger from "..//images/icon-hamburger.svg";
 import arrow from "..//images/icon-arrow-down.svg";
+import CloseIcon from "@mui/icons-material/Close";
 // import { useRef } from "react";
 
 const Navbar = () => {
-  const [showdropDown, setShowDropDown] = useState(false);
+  // const [showdropDown, setShowDropDown] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <div className="wrapper">
       <div className="hero">
         <div className="main-container">
-          <h2 className="navName">
-            <a href="#sunny">
-              <img src={logo} alt="logo" />
-            </a>
-          </h2>
-          <ul className="navList">
-            <li>
+          <img src={logo} alt="logo" className="logo" />
+          <ul
+            className={isMobile ? "navlist-mobile" : "navList"}
+            onClick={() => setIsMobile(false)}
+          >
+            <li className="about">
               <a href="#about">About</a>
             </li>
-            <li>
+            <li className="service">
               <a href="#services">Services</a>
             </li>
-            <li>
+            <li className="project">
               <a href="#project">Projects</a>
             </li>
-            <li>
+            <li className="contact">
               <span className="spans">
                 <a href="#span" className="contact">
                   Contact
@@ -34,34 +35,13 @@ const Navbar = () => {
               </span>
             </li>
           </ul>
-          <div className="hamburger">
-            <img
-              src={hamburger}
-              alt="hamburger"
-              onClick={() => setShowDropDown(!showdropDown)}
-            />
-          </div>
 
-          {showdropDown && (
-            <ul className="dropdown">
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#project">Projects</a>
-              </li>
-              <li>
-                <span className="contact">
-                  <a href="#span" className="contact">
-                    Contact
-                  </a>
-                </span>
-              </li>
-            </ul>
-          )}
+          <div
+            className="mobile-hamburger"
+            onClick={() => setIsMobile(!isMobile)}
+          >
+            {isMobile ? <CloseIcon /> : <img src={hamburger} alt="hamburger" />}
+          </div>
         </div>
 
         <div className="heroContent">
