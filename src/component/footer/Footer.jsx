@@ -19,7 +19,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <div className="links icon-container">
+      <div className="links-icon-container">
         <svg
           class="icon"
           width="20"
