@@ -16,6 +16,8 @@
     margin: 40px 0;
 
     @media (min-width: 310px) and (max-width: 430px) {
+      display: flex;
+      flex-direction: row;
       gap: 10px;
     }
 
