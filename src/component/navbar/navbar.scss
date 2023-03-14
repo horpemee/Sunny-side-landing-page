@@ -2,7 +2,7 @@
   // overflow: none;
   background-image: url("../images/image-header.jpg");
   background-position: center;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background-size: cover;
   position: relative;
@@ -13,6 +13,7 @@
     width: 100vw;
     background-size: cover;
     background-image: url("../images/image-header1.jpg");
+    background-color: red;
   }
   .main-container {
     display: flex;
