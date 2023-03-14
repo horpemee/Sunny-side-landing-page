@@ -64,7 +64,6 @@ const Section = (props) => {
       {/* Third Hero Section */}
       <div className="section3">
         <div className="colOne-img grape">
-          <img src={graphics} alt="graphics" className="graphics" />
           <div className="grape-text">
             <h1>Graphic Design</h1>
             <p>
@@ -75,7 +74,6 @@ const Section = (props) => {
           </div>
         </div>
         <div className="colOne-img orange">
-          <img src={photog} alt="photog" className="photograph" />
           <div className="orange-text">
             <h1>Photography</h1>
             <p>
