@@ -72,26 +72,34 @@ const Testimonials = (props) => {
 
       {/* Gallery display */}
       <div className="gallery">
-        {isMobile ? (
-          <img src={mBottle} alt="bottle" />
-        ) : (
-          <img src={bottle} alt="bottle" />
-        )}
-        {isMobile ? (
-          <img src={mOrange} alt="orange" />
-        ) : (
-          <img src={orange} alt="orange" />
-        )}
-        {isMobile ? (
-          <img src={mCone} alt="cone" />
-        ) : (
-          <img src={cone} alt="cone" />
-        )}
-        {isMobile ? (
-          <img src={mSugar} alt="sugar" />
-        ) : (
-          <img src={sugar} alt="sugar" />
-        )}
+        <div className="grid-item">
+          {isMobile ? (
+            <img src={mBottle} alt="bottle" />
+          ) : (
+            <img src={bottle} alt="bottle" />
+          )}
+        </div>
+        <div className="grid-item">
+          {isMobile ? (
+            <img src={mOrange} alt="orange" />
+          ) : (
+            <img src={orange} alt="orange" />
+          )}
+        </div>
+        <div className="grid-item">
+          {isMobile ? (
+            <img src={mCone} alt="cone" />
+          ) : (
+            <img src={cone} alt="cone" />
+          )}
+        </div>
+        <div className="grid-item">
+          {isMobile ? (
+            <img src={mSugar} alt="sugar" />
+          ) : (
+            <img src={sugar} alt="sugar" />
+          )}
+        </div>
       </div>
     </div>
   );
