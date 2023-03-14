@@ -84,9 +84,9 @@
     @media (max-width: 520px) {
       display: flex;
       background-color: rebeccapurple;
-      flex-direction: column;
+      flex-direction: row;
       width: 100vw;
-      order: 1;
+      // order: 1;
       // background-color: red;
     }
   }
