@@ -6,24 +6,15 @@ import bottle from "../testimonials/logos/image-gallery-milkbottles.jpg";
 import cone from "../testimonials/logos/image-gallery-cone.jpg";
 import orange from "../testimonials/logos/image-gallery-orange.jpg";
 import sugar from "../testimonials/logos/image-gallery-sugarcubes.jpg";
+import mBottle from "../testimonials/mobile-images/image-gallery-milkbottles.jpg";
+import mCone from "../testimonials/mobile-images/image-gallery-cone.jpg";
+import mOrange from "../testimonials/mobile-images/image-gallery-orange.jpg";
+import mSugar from "../testimonials/mobile-images/image-gallery-sugar-cubes.jpg";
 
 import "./testimonials.scss";
 
-const Testimonials = () => {
-  const mobileImg = [
-    "image-gallery-orange.jpg",
-    "image-gallery-cone.jpg",
-    "image-gallery-milkbottles.jpg",
-    "image-gallery-sugarcubes.jpg",
-  ];
-
-  const desktopImg = [
-    "image-gallery-orange.jpg",
-    "image-gallery-cone.jpg",
-    "image-gallery-milkbottles.jpg",
-    "image-gallery-sugarcubes.jpg",
-  ];
-
+const Testimonials = (props) => {
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <div className="main-body">
       <div className="testimony-wrapper">
@@ -65,17 +56,27 @@ const Testimonials = () => {
       </div>
 
       {/* Gallery display */}
-      <div className="gallery">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <>
+      <div className="gallery" onClick={() => setIsMobile(true)}>
+        {isMobile ? (
+          <img src={mBottle} alt="bottle" />
+        ) : (
           <img src={bottle} alt="bottle" />
+        )}
+        {isMobile ? (
+          <img src={mOrange} alt="orange" />
+        ) : (
           <img src={orange} alt="orange" />
+        )}
+        {isMobile ? (
+          <img src={mCone} alt="cone" />
+        ) : (
           <img src={cone} alt="cone" />
+        )}
+        {isMobile ? (
+          <img src={mSugar} alt="sugar" />
+        ) : (
           <img src={sugar} alt="sugar" />
-        </>
+        )}
       </div>
     </div>
   );
