@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./section.scss";
 import egg from "../../component/section/images/image-transform.jpg";
 import standout from "../../component/section/images/image-stand-out.jpg";
 import graphics from "../../component/section/images/image-graphic-design.jpg";
 import photog from "../../component/section/images/image-photography.jpg";
+import sEgg from "../../component/section/images/egg.jpg";
+import sGlass from "../../component/section/images/glass.jpg";
+import sGrape from "../../component/section/images/grape.jpg";
+import sStrawberry from "../../component/section/images/strawberry.jpg";
 
-const Section = () => {
+const Section = (props) => {
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <>
       {/* First Hero Section */}
@@ -24,12 +29,20 @@ const Section = () => {
           </div>
         </div>
         <div className="colOne-img">
-          <img src={egg} alt="" />
+          {isMobile ? (
+            <img src={sEgg} alt="egg" />
+          ) : (
+            <img src={egg} alt="egg" />
+          )}
         </div>
       </div>
       <div className="section2">
         <div className="colOne-img img2">
-          <img src={standout} alt="" />
+          {isMobile ? (
+            <img src={sGlass} alt="standout" />
+          ) : (
+            <img src={standout} alt="standout" />
+          )}
         </div>
 
         {/* Second Hero Section */}

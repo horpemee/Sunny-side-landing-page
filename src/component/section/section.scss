@@ -6,7 +6,7 @@
   flex-direction: row;
   overflow: hidden;
 
-  @media (max-width: 420px) {
+  @media (max-width: 520px) {
     display: flex;
     flex-direction: column;
   }
@@ -17,7 +17,7 @@
     color: var(--Very-dark-desaturated-blue);
     width: 50vw;
 
-    @media (max-width: 420px) {
+    @media (max-width: 520px) {
       width: 100vw;
       order: 2;
     }
@@ -79,9 +79,9 @@
     }
   }
   .colOne-img {
-    width: 50vw;
+    // width: 50vw;
 
-    @media (max-width: 420px) {
+    @media (max-width: 520px) {
       display: flex;
       background-color: rebeccapurple;
       flex-direction: column;
