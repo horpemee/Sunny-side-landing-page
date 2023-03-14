@@ -56,7 +56,7 @@ const Testimonials = (props) => {
       </div>
 
       {/* Gallery display */}
-      <div className="gallery" onClick={() => setIsMobile(true)}>
+      <div className="gallery">
         {isMobile ? (
           <img src={mBottle} alt="bottle" />
         ) : (
