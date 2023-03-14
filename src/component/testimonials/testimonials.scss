@@ -69,12 +69,12 @@
     flex-direction: row;
 
     @media (max-width: 520px) and (min-width: 310px) {
-      .gallery {
-        display: flex;
-        // flex-wrap: wrap;
-        flex-direction: column;
-        width: 100vw;
-      }
+      display: flex;
+      background-color: red;
+      // flex-wrap: wrap;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100vw;
     }
     img {
       object-fit: cover;
