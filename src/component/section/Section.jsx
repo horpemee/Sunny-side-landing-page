@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import "./section.scss";
 import egg from "../../component/section/images/image-transform.jpg";
 import standout from "../../component/section/images/image-stand-out.jpg";
-import graphics from "../../component/section/images/image-graphic-design.jpg";
-import photog from "../../component/section/images/image-photography.jpg";
+// import graphics from "../../component/section/images/image-graphic-design.jpg";
+// import photog from "../../component/section/images/image-photography.jpg";
 import sEgg from "../../component/section/images/egg.jpg";
 import sGlass from "../../component/section/images/glass.jpg";
-import sGrape from "../../component/section/images/grape.jpg";
-import sStrawberry from "../../component/section/images/strawberry.jpg";
 
 const Section = (props) => {
   const [isMobile, setIsMobile] = useState(false);
