@@ -101,7 +101,10 @@
     color: var(--Dark-moderate-cyan);
 
     @media (max-width: 520px) {
-      background-image: url(images/strawberry.jpg);
+      background-image: url("images/strawberry.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     .grape-text {
