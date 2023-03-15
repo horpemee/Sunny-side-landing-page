@@ -11,9 +11,10 @@
     // background-position: center;
     // min-height: 100vh;
     // width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    background-size: contain;
     background-image: url("../images/image-header1.jpg");
   }
   .main-container {
@@ -33,7 +34,7 @@
       .about,
       .service,
       .project {
-        padding: 25px 15px;
+        // padding: 25px 15px;
         font-size: 14px;
 
         a {
