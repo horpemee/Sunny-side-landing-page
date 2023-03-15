@@ -4,10 +4,8 @@ import logo from "..//images/logo.svg";
 import hamburger from "..//images/icon-hamburger.svg";
 import arrow from "..//images/icon-arrow-down.svg";
 import CloseIcon from "@mui/icons-material/Close";
-// import { useRef } from "react";
 
 const Navbar = () => {
-  // const [showdropDown, setShowDropDown] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   return (
     <div className="hero">
