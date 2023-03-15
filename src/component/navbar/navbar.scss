@@ -8,10 +8,8 @@
   background-size: cover;
   position: relative;
 
-  @media (max-width: 520px) {
+  @media (min-width: 520px) {
     background-image: url("../images/image-header1.jpg");
-    position: absolute;
-    top: 0;
   }
   .main-container {
     display: flex;
