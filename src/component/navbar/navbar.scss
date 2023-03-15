@@ -1,12 +1,11 @@
 .hero {
-  // overflow: none;
   background-image: url("../images/image-header.jpg");
-  background-position: center;
+  background-position: center center;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: 320px) {
+  @media (min-width: 320px) and (max-width: 520px) {
     background-image: url("../images/image-header1.jpg");
   }
   .main-container {
