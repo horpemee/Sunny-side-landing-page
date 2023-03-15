@@ -12,8 +12,7 @@
     min-height: 100vh;
     width: 100vw;
     background-size: cover;
-    // background-image: url("../images/image-header1.jpg");
-    background-color: red;
+    background-image: url("../images/image-header1.jpg");
   }
   .main-container {
     display: flex;
@@ -141,8 +140,11 @@
       font-size: 40px;
       margin: 4rem 0;
       font-weight: 900;
-
       text-transform: uppercase;
+
+      @media (max-width: 520px) and (min-width: 310px) {
+        margin-top: 150px;
+      }
     }
     img {
       position: absolute;
