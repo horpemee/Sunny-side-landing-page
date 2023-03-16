@@ -68,12 +68,11 @@
 
       .navlist-mobile {
         position: absolute;
-        display: block;
-
+        // display: block;
         background-color: var(--White);
         list-style: none;
         left: 0;
-        top: 75px;
+        top: 70px;
         transition: all 0.5s ease-in-out;
         width: 100%;
         font-size: 18px;
