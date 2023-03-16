@@ -15,6 +15,10 @@
     justify-content: space-around;
     align-items: center;
 
+    @media (min-width: 320px) and (max-width: 520px) {
+      background-color: transparent;
+    }
+
     .navList {
       display: flex;
       justify-content: flex-end;
@@ -68,7 +72,7 @@
 
       .navlist-mobile {
         position: absolute;
-        // display: block;
+        display: block;
         background-color: var(--White);
         list-style: none;
         left: 0;
