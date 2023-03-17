@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: 320px) and (max-width: 520px) {
-    background-size: cover;
+  // @media (min-width: 320px) and (max-width: 520px) {
+  //   background-size: cover;
 
-    background-image: url("../images/image-header1.jpg");
-  }
+  //   background-image: url("../images/image-header1.jpg");
+  // }
   .main-container {
     display: flex;
     // padding: 30px;
