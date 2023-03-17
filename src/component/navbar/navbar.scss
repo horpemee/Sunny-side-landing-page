@@ -19,6 +19,8 @@
 
     @media (min-width: 320px) and (max-width: 520px) {
       // position: static;
+      margin: 0px;
+      padding: 0px;
       visibility: visible;
       background-color: red;
     }
@@ -68,7 +70,6 @@
         position: absolute;
         top: 25px;
         left: 35px;
-        background-color: rebeccapurple;
       }
 
       .navList {
