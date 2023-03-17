@@ -33,7 +33,10 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="mobile-hamburger">
+        <div
+          className="mobile-hamburger"
+          onClick={() => setIsMobile(!isMobile)}
+        >
           {isMobile ? <CloseIcon /> : <img src={hamburger} alt="hamburger" />}
         </div>
       </div>
