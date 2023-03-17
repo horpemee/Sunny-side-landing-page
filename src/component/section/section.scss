@@ -1,15 +1,15 @@
 .section,
 .section2,
 .section3 {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  //   width: 100vw;
+  //   display: flex;
+  //   flex-direction: row;
+  //   overflow: hidden;
 
-  @media (max-width: 520px) {
-    display: flex;
-    flex-direction: column;
-  }
+  //   @media (max-width: 520px) {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
 
   .colOne {
     background-color: white;
